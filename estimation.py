@@ -1,4 +1,6 @@
 import numpy as np
+import hawkes
+import jumpdiff
 
 np.random.seed(7)
 
@@ -31,9 +33,11 @@ times = hawkes.simuHawkesExpoM(param, M, Tend, xi)
 # --------------------------------------------------
 ngrid = 5000
 grid = np.linspace(0.0, Tend, ngrid + 1)
-isjumpN, all_spikes = hawkes_to_isjumpN(times, grid)
+isjumpN, all_spikes = jumpdiff.hawkes_to_isjumpN(times, grid)
 
 # --------------------------------------------------
 # 3) Generate basis functions and plot them
 # --------------------------------------------------
-bfunc, sigfunc, afunc, basis_params = generate_basis_functions(K=3, seed=12, m=0.0)
+bfunc, sigfunc, afunc, basis_params = jumpdiff.generate_basis_functions(
+    K=3, seed=12, m=0.0
+)
