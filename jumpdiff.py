@@ -1,6 +1,9 @@
 import hawkes
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.set_context("paper")
 
 
 def simu_jumpdiff(X0, grid, bfunc, sigfunc, afunc, isjumpN):
