@@ -101,6 +101,7 @@ def generate_basis_functions(K=3, seed=None, m=0.0):
         return np.maximum(0.05, val)
 
     # Jump amplitude a: positive
+    # a_c0 = rng.uniform(0.12, 0.28)
     a_c0 = rng.uniform(0.12, 0.28)
     a_cos = rng.uniform(-0.05, 0.05, size=K)
     a_sin = rng.uniform(-0.05, 0.05, size=K)
@@ -303,7 +304,7 @@ def main():
     # --------------------------------------------------
     # 1) Multivariate Hawkes process
     # --------------------------------------------------
-    M = 4
+    M = 1
     Tend = 40.0
 
     xi = 0.28

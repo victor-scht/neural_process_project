@@ -10,7 +10,8 @@ from scipy.io import loadmat
 # ============================================================
 def setup_paths():
     current_dir = os.getcwd()
-    parent_dir = os.path.dirname(current_dir)
+    # parent_dir = os.path.dirname(current_dir)
+    parent_dir = current_dir
     data_dir = os.path.join(parent_dir, "data")
     data_extra_dir = os.path.join(data_dir, "SignalExtra")
     data_intra_dir = os.path.join(data_dir, "SignalIntra")
