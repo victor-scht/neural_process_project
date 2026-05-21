@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 
-from utils import ensure_dir
+from build_dataset.utils import ensure_dir
 
 
 from typing import Sequence

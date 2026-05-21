@@ -1,5 +1,5 @@
-from config import FitProcessConfig
-from estimate_real_data import run_real_data_estimation
+from fit_process_2.config import FitProcessConfig
+from fit_process_2.estimate_real_data import run_real_data_estimation
 
 if __name__ == "__main__":
     cfg = FitProcessConfig()

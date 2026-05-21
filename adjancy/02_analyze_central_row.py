@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
-from config import AdjacencyConfig
-from adjacency_utils import *
+from adjancy.config import AdjacencyConfig
+from adjancy.adjacency_utils import *
 
 cfg = AdjacencyConfig()
 

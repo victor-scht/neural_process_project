@@ -16,7 +16,7 @@ class FitProcessConfig:
     Delta_model: float = 4.8e-5
     downsample_factor: int = 1
 
-    hawkes_decay_value: float = 10.0
+    hawkes_decay_value: float = 20.0
 
     npas: int = 200
     Nn: int = 20

@@ -107,29 +107,6 @@ def run_real_data_estimation(cfg: FitProcessConfig):
     X = X_real
     isjumpN = build_jump_counts(grid, spikes_selected)
 
-    if cfg.use_synthetic_path:
-
-        def bdrift(x):
-            return -20.0 * x - 1080.0
-
-        def sig(x):
-            return 11.0
-
-        def ajump(x):
-            return max(-0.07 * x - 2.0, cfg.positivity_floor)
-
-        rng = np.random.default_rng(cfg.synthetic_seed)
-        X0 = float(rng.uniform(cfg.synthetic_X0_low, cfg.synthetic_X0_high))
-        X = simu_jumpdiff(
-            X0=X0,
-            grid=grid,
-            bfunc=bdrift,
-            sigfunc=sig,
-            afunc=ajump,
-            isjumpN=isjumpN,
-            rng=rng,
-        )
-
     n = len(X) - 2
     q1, q2 = float(np.min(X)), float(np.max(X))
     if q2 <= q1:

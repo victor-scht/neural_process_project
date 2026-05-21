@@ -4,9 +4,14 @@ import json
 import numpy as np
 
 
-from config import Config
-from plot_utils import plot_overlay, plot_spike_raster, plot_counts_bar, plot_psth_trial
-from utils import ensure_dir, save_config, save_json
+from build_dataset.config import Config
+from build_datset.plot_utils import (
+    plot_overlay,
+    plot_spike_raster,
+    plot_counts_bar,
+    plot_psth_trial,
+)
+from build_datset.utils import ensure_dir, save_config, save_json
 
 
 def visualize_selected(config: Config, plot_raster: bool = True):

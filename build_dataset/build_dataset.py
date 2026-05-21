@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import numpy as np
 
-from config import Config
-from utils import (
+from build_dataset.config import Config
+from build_dataset.utils import (
     clean_extra,
     detect_all_intra_spikes,
     ensure_dir,

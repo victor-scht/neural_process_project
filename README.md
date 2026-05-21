@@ -27,8 +27,8 @@ Bien que la méthode d'utilisation est décrite ci-dessous, il y a des fichiers 
 À exécuter dans le terminal :
 
 ```
-python ./build_dataset/build_dataset.py
-python ./build_dataset/visualize_data.py
+python -m build_dataset.build_dataset
+python -m build_dataset.visualize_data
 ```
 
 Ou alors exécuter les fichiers dans un éditeur de code (Ex : Vscode).
@@ -43,9 +43,9 @@ Des courbes et des informations sur les données sont également produites dans 
 À exécuter dans le terminal :
 
 ```
-python ./adjancy/01_compute_full_adjacency.py
-python ./adjancy/02_analyze_central_row.py
-python ./adjancy/03_compute_small_adjacencies.py
+python -m adjancy.01_compute_full_adjacency
+python -m adjancy.02_analyze_central_row
+python -m adjancy.03_compute_small_adjacencies
 ```
 
 Ou alors exécuter les fichiers directement dans un éditeur de code (Ex : Vscode).
@@ -61,19 +61,19 @@ Si besoin, modifier le fichier `./adjancy/config.py`.
 Pour tester la méthode de l'article sur des jeux de données synthétiques, exécuter dans le teminal :
 
 ```
-python ./test_fit_process/estimation.py
+python -m test_fit_process.estimation
 ```
 
 Pour tester la méthode sur un potentiel de membrane,
 
 ```
-python ./fit_process/run_fit_process.py
+python -m fit_process.run_fit_process
 ```
 
 Pour tester la méthode avec projection sur une base de spline,
 
 ```
-python ./fit_process_2/run_fit_process.py
+python -m fit_process_2.run_fit_process
 ```
 
 Modifier les fichiers de config (`config.py`) si nécessaires (par exemple pour sélectionner un test, une fenêtre temporelle, un échantillonage...).

@@ -1,6 +1,6 @@
 import numpy as np
-from config import AdjacencyConfig
-from adjacency_utils import *
+from adjancy.config import AdjacencyConfig
+from adjancy.adjacency_utils import *
 
 cfg = AdjacencyConfig()
 cfg.decay_grid = (20.0,)

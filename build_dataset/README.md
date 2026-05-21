@@ -23,6 +23,7 @@ python visualize_selected.py
     - supprime les essais où le neurone cible n'a aucun spike
     - supprime les neurones sans spike dans l'intervalle
     - sauvegarde les tableaux traités `.npy` et les métadonnées
+
 - `visualize_data.py`
     - charge les `.npy` traités
     - crée les fichiers csv demandés pour les diagnostics

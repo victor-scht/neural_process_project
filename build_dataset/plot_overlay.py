@@ -3,8 +3,8 @@ import argparse
 import numpy as np
 import matplotlib.pyplot as plt
 
-from utils import load_config
-from config import Config
+from build_dataset.utils import load_config
+from build_dataset.config import Config
 
 
 def plot_overlay(data_intra, data_extra, config, trial=0, neuron_index=-1):

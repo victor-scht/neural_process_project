@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import hawkes
-import jumpdiff
+import test_fit_process.hawkes as hawkes
+import test_fit_process.jumpdiff as jumpdiff
 from scipy.stats import norm
 
 np.random.seed(7)
@@ -18,15 +18,8 @@ xi_vec = np.full(M, xi)
 beta0 = 5
 beta = np.full(M, beta0)
 
-alpha = np.array(
-    [
-        [0.00, 0.16, 0.08, 0.05],
-        [0.10, 0.00, 0.12, 0.07],
-        [0.06, 0.11, 0.00, 0.09],
-        [0.04, 0.07, 0.13, 0.00],
-    ]
-)
 
+alpha = np.eye(4)
 param = [xi_vec, alpha, beta]
 times = hawkes.simuHawkesExpoM(param, M, Tend, xi)
 

@@ -17,7 +17,7 @@ class FitProcessConfig:
     Delta_model: float = 4.8e-5
     downsample_factor: int = 1
 
-    hawkes_decay_value: float = 10.0
+    hawkes_decay_value: float = 20.0
 
     npas: int = 200
     Nn: int = 20
@@ -32,11 +32,6 @@ class FitProcessConfig:
     spline_min_basis: int = 4
     positivity_floor: float = 1e-8
     spline_ridge: float = 1e-8
-
-    use_synthetic_path: bool = False
-    synthetic_X0_low: float = -55.0
-    synthetic_X0_high: float = -45.0
-    synthetic_seed: int = 123
 
     def processed_path(self) -> Path:
         return Path(self.processed_dir)
