@@ -22,6 +22,10 @@ Bien que la méthode d'utilisation est décrite ci-dessous, il y a des fichiers 
 
 ## Utilisation
 
+### Installation
+
+Le code a été fait dans le cadre de `python3.8` pour pouvoir utiliser le package `tick`.
+
 ### Build Dataset
 
 À exécuter dans le terminal :
