@@ -38,5 +38,4 @@ class FitProcessConfig:
         return Path(self.adjacency_dir)
 
     def output_path(self) -> Path:
-        print("hello")
         return Path(self.output_dir)
