@@ -1,0 +1,40 @@
+{
+  "processed_dir": "data/processed/exp1",
+  "output_dir": "adjancy/outputs",
+  "n_trials": 9,
+  "n_neurons_full": 248,
+  "central_neuron_index": -1,
+  "selection_trigger": 0.01,
+  "n_selected_neurons": 15,
+  "selected_local_indices": [
+    55,
+    70,
+    96,
+    113,
+    115,
+    116,
+    123,
+    136,
+    137,
+    149,
+    150,
+    207,
+    227,
+    229,
+    237
+  ],
+  "small_timeframes": [
+    [
+      0.0,
+      4.0
+    ],
+    [
+      0.0,
+      8.0
+    ],
+    [
+      0.0,
+      13.0
+    ]
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "original_trial_id": 0,
+  "local_trial_index": 0,
+  "shifted_interval": [
+    0.0,
+    5.0
+  ],
+  "n_selected_neurons_from_selected_npy": 15,
+  "n_used_neurons_after_alignment": 15,
+  "basis_g": 17,
+  "basis_sig": 18,
+  "basis_a": 19,
+  "basis_b": 20,
+  "grid_length": 104166,
+  "X_length": 104166,
+  "truncated_count": 11617,
+  "spline_degree": 3,
+  "positivity_floor": 1e-08
+}
